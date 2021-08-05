@@ -1,0 +1,56 @@
+
+
+Form{
+  display:flex;
+  justify-content: space-evenly;
+  color:white;
+  margin-top:30px;
+}
+
+#formDiv{
+  width:150%;
+  font-family: 'Open Sans', sans-serif;
+  
+}
+
+#controlSearch{
+  width: 55%;
+  float:left;
+  margin-right:0px;
+}
+
+label.form-label{
+  margin-left:25%;
+  font-family: 'Bebas Neue', cursive;
+  font-size:2vw;
+}
+
+
+#exerciseCards{
+  display:flex;
+  justify-content: center;
+  margin-top:5%;
+  flex-wrap:wrap;
+  
+}
+
+div .card{
+  border-style: none;
+  margin:5px;
+}
+
+div .card-body{
+  position:relative;
+  background-color: gray;
+  border-radius:3px;
+  padding:1rem 1rem 2rem 1rem;
+}
+
+
+#favButton{
+  position:absolute;
+  bottom:0;
+  right:5px;
+  margin-bottom:5px;
+}
+

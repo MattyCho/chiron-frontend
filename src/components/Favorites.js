@@ -1,7 +1,9 @@
 import React from 'react';
 import {withAuth0} from '@auth0/auth0-react';
 import axios from 'axios';
-import {Card, Button} from 'react-bootstrap'
+import {Card, Button} from 'react-bootstrap';
+import '../css/exerciseSearch.css';
+import ReactHtmlParser, { processNodes, convertNodeToElement, htmlparser2 } from 'react-html-parser';
 
 class Favorites extends React.Component {
   constructor(props) {
@@ -41,7 +43,7 @@ class Favorites extends React.Component {
   render() {
     return (
       <>
-        <p>Favorites page</p>
+        <div id="exerciseCards">
         {
           this.state.favoritesArray.map((exercise, idx) => 
           <Card style={{ width: '18rem' }}>
@@ -49,16 +51,17 @@ class Favorites extends React.Component {
                 <Card.Title>{exercise.name}</Card.Title>
                 <Card.Text>
                   <div>
-                    <p>{exercise.description}</p>
+                    <p>{ReactHtmlParser(exercise.description)}</p>
                     <p>{exercise.category}</p>
                     <p>{exercise.equipment}</p>
                   </div>
                 </Card.Text>
-                <Button onClick={() => this.removeFavorite(exercise._id)}variant="primary">Delete</Button>
+                <Button id="favButton" onClick={() => this.removeFavorite(exercise._id)}variant="dark">Delete</Button>
               </Card.Body>
             </Card>
           )
         }
+        </div>
       </>
     )
   }

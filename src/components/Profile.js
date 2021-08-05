@@ -2,6 +2,7 @@ import React from 'react';
 import axios from 'axios';
 import { withAuth0 } from '@auth0/auth0-react';
 import { Card, ListGroup, ListGroupItem } from 'react-bootstrap'
+import '../css/profile.css';
 
 class Profile extends React.Component {
     componentDidMount() {
@@ -28,7 +29,7 @@ class Profile extends React.Component {
     render() {
         const { user } = this.props.auth0;
         return (
-            <div>
+            <div id="profileBody">
                 <Card style={{ width: '18rem' }}>
                     <Card.Img variant="top" src={user.picture} />
                     <Card.Body>

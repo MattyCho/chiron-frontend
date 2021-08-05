@@ -3,6 +3,8 @@ import {withAuth0} from '@auth0/auth0-react';
 import axios from 'axios';
 import {Card, Button} from 'react-bootstrap';
 import ExerciseForm from './Form.js';
+import '../css/exerciseSearch.css';
+import ReactHtmlParser, { processNodes, convertNodeToElement, htmlparser2 } from 'react-html-parser';
 
 
 class Exercises extends React.Component {
@@ -68,19 +70,24 @@ class Exercises extends React.Component {
     .catch(err => console.error(err));
   }
 
+  
   render() {
     return (
       <>
         <ExerciseForm exerciseArray={this.state.exerciseArray} setFilteredArray={this.setFilteredArray}/>
+        <div id="exerciseCards">
         {this.state.filteredArray.length > 0 && this.state.filteredArray.map((exercise, idx) =>
-          <Card style={{ width: '18rem' }}>
+          <Card style={{ width: '18rem'}}>
             <Card.Body>
               <Card.Title>{exercise.name}</Card.Title>
-              <Card.Text>{exercise.description}</Card.Text>
-              <Button onClick={() => this.addToFavorites(exercise.name, exercise.description, exercise.category, exercise.equipment)} variant="primary">Add to Favorites</Button>
+              <Card.Text id="cardText">{ReactHtmlParser(exercise.description)}</Card.Text>
+              <div id="favButton">
+              <Button onClick={() => this.addToFavorites(exercise.name, exercise.description, exercise.category, exercise.equipment)} variant="dark">Add to Favorites</Button>
+              </div>
             </Card.Body>
           </Card>
         )}
+        </div>
       </>
     )
   }
