@@ -1,0 +1,54 @@
+#navBar{
+  display:flex;
+  justify-content: space-between;
+  background-color:black;
+  color:white;
+  position:sticky;
+  top:0;
+  font-family: 'Bebas Neue', cursive;
+  font-size:2vw;
+  z-index: 1;
+  padding-right:15px;
+  padding-top:0;
+  padding-bottom:0;
+}
+
+#chironLogo {
+  width:10%;
+
+}
+
+#link {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+#link:visited {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+#link:hover {
+  font-size:3vw;
+  background-color: transparent;
+  transition:350ms;
+}
+
+#link:active {
+  color: white;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+#logButton {
+  transition:350ms all;
+  background-color: white;
+  color:black;
+}
+
+#logButton:hover{
+  color:white;
+  background-color:black;
+}

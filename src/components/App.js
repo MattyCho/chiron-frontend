@@ -11,6 +11,7 @@ import Exercises from './Exercises.js';
 import Favorites from './Favorites.js'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
+
 class App extends React.Component {
   render() {
     return (

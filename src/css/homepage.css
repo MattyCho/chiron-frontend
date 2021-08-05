@@ -1,0 +1,20 @@
+#homePageAccordion{
+  text-align:center;
+  margin-top:5%;
+  margin-left:15%;
+  width:75%;
+  
+  font-size: 3vw;
+}
+
+#accordionCards{
+  font-family: 'Bebas Neue', cursive;
+  margin-bottom:8%;
+ 
+}
+
+#accordionBody{
+  background-color: gray;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.5vw;
+}

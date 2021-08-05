@@ -5,6 +5,10 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image: url("./css/brett-jordan-U2q73PfHFpM-unsplash.jpg");
+  opacity:.9;
+  background-size:cover;
+  background-color: black;
 }
 
 code {

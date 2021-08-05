@@ -1,6 +1,7 @@
 import React from 'react';
 import {Button, Form} from 'react-bootstrap';
 import {withAuth0} from '@auth0/auth0-react';
+import '../css/exerciseSearch.css';
 
 class ExerciseForm extends React.Component {
   constructor(props) {
@@ -31,20 +32,23 @@ class ExerciseForm extends React.Component {
         <Form>
           <Form.Group controlId="formExerciseName">
             <Form.Label>Exercise Name</Form.Label>
-            <Form.Control type="text" placeholder="Search for Exercise by name" onChange={(e) => this.setState({ name: e.target.value})}/>
-            <Button variant="primary" type="submit" onClick={this.handleNameSubmit}>
+            <div id="formDiv">
+            <Form.Control id="controlSearch" type="text" placeholder="Search for Exercise by name" onChange={(e) => this.setState({ name: e.target.value})}/>
+            <Button variant="dark" type="submit" onClick={this.handleNameSubmit}>
               Search by Name
             </Button>
+            </div>
           </Form.Group>
 
-          <h1>OR</h1>
 
           <Form.Group controlId="formFocusArea">
             <Form.Label>Focus Area</Form.Label>
-            <Form.Control type="text" placeholder="Search for Exercise by focus area" onChange={(e) => this.setState({ focusArea: e.target.value})}/>
-            <Button variant="primary" type="submit" onClick={this.handleFocusAreaSubmit}>
+            <div id="formDiv">
+            <Form.Control id="controlSearch" type="text" placeholder="Search for Exercise by focus area" onChange={(e) => this.setState({ focusArea: e.target.value})}/>
+            <Button variant="dark" type="submit" onClick={this.handleFocusAreaSubmit}>
               Search by Focus Area
             </Button>
+            </div>
           </Form.Group>
         </Form>
       </>
