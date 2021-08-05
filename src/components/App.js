@@ -9,10 +9,35 @@ import Header from './Header.js';
 import Homepage from './Homepage.js';
 import Exercises from './Exercises.js';
 import Favorites from './Favorites.js'
+import axios from 'axios';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import DesignersPage from './designersPage';
+import Footer from './Footer.js';
 
 
 class App extends React.Component {
+
+  componentDidMount() {
+    this.getExercises();
+  }
+
+  getExercises = () => {
+    this.props.auth0.getIdTokenClaims()
+      .then(async res => {
+        const jwt = res.__raw;
+
+        const config = {
+          headers: { "authorization": `Bearer ${jwt}` },
+          baseURL: process.env.REACT_APP_SERVER,
+          url: '/exercise',
+          params: { email: this.props.auth0.user.email },
+          method: 'get'
+        }
+        const exercises = await axios(config);
+      })
+      .catch(err => console.error(err));
+  }
+
   render() {
     return (
       <div>
@@ -38,8 +63,13 @@ class App extends React.Component {
               {this.props.auth0.isAuthenticated &&
                 <Favorites />}
             </Route>
+
+            <Route exact path='/aboutUs'>
+              {this.props.auth0.isAuthenticated &&
+                <DesignersPage />}
+            </Route>
           </Switch>
-          {/* <Footer /> */}
+          <Footer />
         </Router>
       </div>
     )

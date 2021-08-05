@@ -1,0 +1,23 @@
+#footerDiv{
+    width:100%;
+    height: 5%;
+    position: fixed;
+    bottom:0;
+    background-color: black;
+}
+
+#aboutUsLink{
+    color:white;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 2vw;
+    text-decoration: none;
+}
+#aboutUsLink:hover{
+    font-size: 3vw;
+}
+
+section{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+}

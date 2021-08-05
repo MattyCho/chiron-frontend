@@ -54,3 +54,11 @@ div .card-body{
   margin-bottom:5px;
 }
 
+#addFavButton:hover{
+  background-color: white;
+  color: black;
+}
+#addFavButton:focus{
+  background-color: white;
+  color: black;
+}

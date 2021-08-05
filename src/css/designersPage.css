@@ -1,0 +1,30 @@
+#cardDiv .card{
+    color: white;
+}
+#cardDiv{
+    display:flex;
+    justify-content: space-evenly;
+}
+
+.card-title{
+    font-family: 'Bebas Neue', cursive;
+}
+
+.card-text{
+    font-family: 'Open Sans', sans-serif;
+}
+
+#aboutUsContent{
+    display: block;
+    text-align: center;
+    color: white;
+}
+
+#aboutUsContent h1{
+    margin-top: 20px;
+    font-family: 'Bebas Neue', cursive;
+}
+
+#aboutUsContent p{
+    font-family: 'Open Sans', sans-serif;
+}
