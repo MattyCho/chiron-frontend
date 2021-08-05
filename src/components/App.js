@@ -33,7 +33,7 @@ class App extends React.Component {
           params: { email: this.props.auth0.user.email },
           method: 'get'
         }
-        const exercises = await axios(config);
+        await axios(config);
       })
       .catch(err => console.error(err));
   }
