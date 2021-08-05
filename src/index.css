@@ -9,6 +9,7 @@ body {
   opacity:.9;
   background-size:cover;
   background-color: black;
+  background-attachment: fixed;
 }
 
 code {
