@@ -5,6 +5,7 @@ Form{
   justify-content: space-evenly;
   color:white;
   margin-top:30px;
+  
 }
 
 #formDiv{
@@ -36,7 +37,8 @@ label.form-label{
 
 div .card{
   border-style: none;
-  margin:5px;
+  margin:5px 10px 60px 10px;
+  opacity:.9;
 }
 
 div .card-body{
