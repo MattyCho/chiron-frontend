@@ -14,11 +14,8 @@ class Homepage extends React.Component {
             </Accordion.Toggle>
             <Accordion.Collapse eventKey="0">
               <Card.Body id="accordionBody">
-              Allow users to create a custom folder of exercises that they can reference for buidling workouts.
-             
-              Why should we care about your product?
-
-One of the biggest road blocks to increasing your physical activite level is doing too much too fast. This app will give users more control over that pace to be able to stick to their exercise goals.</Card.Body>
+                The solution to your customized fitness! No more coockie cutter exercise routines, no more skipping exercises because they aren't right for you!
+             </Card.Body>
             </Accordion.Collapse>
           </Card>
 
@@ -39,7 +36,7 @@ One of the biggest road blocks to increasing your physical activite level is doi
             </Accordion.Toggle>
             <Accordion.Collapse eventKey="2">
               <Card.Body id="accordionBody">
-                One of the biggest road blocks to increasing your physical activite level is doing too much too fast. This app will give users more control over that pace to be able to stick to their exercise goals.
+                One of the biggest road blocks to increasing your physical activite level is doing too much too fast. This app will give you control over that pace making it easier to stick to and achieve your exercise goals.
               </Card.Body>
             </Accordion.Collapse>
           </Card>
