@@ -34,8 +34,7 @@ class DesignersPage extends React.Component {
                         <Card.Body>
                             <Card.Title>David Whitmore</Card.Title>
                             <Card.Text>
-                                Some quick example text to build on the card title and make up the bulk of
-                                the card's content.
+                               David was born and raised in the PNW, and probably will never leave. He is a fullstack software developer in JavaScript with a background in health care where he refined skills of customer engagement and creating solutions and services for the specific needs of his customers. David started his journey into tech in this year with self teaching and now full time classes at Code Fellows. When he is not coding, David spends time with his wife and corgi puppy.
                             </Card.Text>
                         </Card.Body>
                     </Card>
