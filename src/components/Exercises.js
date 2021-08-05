@@ -4,7 +4,7 @@ import axios from 'axios';
 import {Card, Button} from 'react-bootstrap';
 import ExerciseForm from './Form.js';
 import '../css/exerciseSearch.css';
-import ReactHtmlParser, { processNodes, convertNodeToElement, htmlparser2 } from 'react-html-parser';
+import ReactHtmlParser from 'react-html-parser';
 
 
 class Exercises extends React.Component {
