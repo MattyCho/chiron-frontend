@@ -3,7 +3,7 @@ import {withAuth0} from '@auth0/auth0-react';
 import axios from 'axios';
 import {Card, Button} from 'react-bootstrap';
 import '../css/exerciseSearch.css';
-import ReactHtmlParser, { processNodes, convertNodeToElement, htmlparser2 } from 'react-html-parser';
+import ReactHtmlParser from 'react-html-parser';
 
 class Favorites extends React.Component {
   constructor(props) {
