@@ -65,8 +65,7 @@ class App extends React.Component {
             </Route>
 
             <Route exact path='/aboutUs'>
-              {this.props.auth0.isAuthenticated &&
-                <DesignersPage />}
+                <DesignersPage />
             </Route>
           </Switch>
           <Footer />
