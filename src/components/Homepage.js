@@ -25,7 +25,7 @@ class Homepage extends React.Component {
             </Accordion.Toggle>
             <Accordion.Collapse eventKey="1">
               <Card.Body id="accordionBody">
-                A lot of exercise apps come with predisigned workouts that may not be suitable for everyone's level of fitness and equipment. This app allows you to pick just the exercises you want.
+                A lot of exercise apps come with predesigned workouts that may not be suitable for everyone's level of fitness and equipment. This app allows you to pick just the exercises you want.
               </Card.Body>
             </Accordion.Collapse>
           </Card>

@@ -11,11 +11,11 @@
 #aboutUsLink{
     color:white;
     font-family: 'Bebas Neue', cursive;
-    font-size: 2vw;
+    font-size: 1.5vw;
     text-decoration: none;
 }
 #aboutUsLink:hover{
-    font-size: 3vw;
+    font-size: 2vw;
 }
 
 section{

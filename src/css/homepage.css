@@ -13,6 +13,10 @@
  
 }
 
+#accordionCards .card-header:hover{
+  cursor: pointer;
+}
+
 #accordionBody{
   background-color: gray;
   font-family: 'Open Sans', sans-serif;

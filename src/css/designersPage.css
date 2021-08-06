@@ -1,5 +1,6 @@
 #cardDiv .card{
     color: white;
+    opacity:1;
 }
 #cardDiv{
     display:flex;
