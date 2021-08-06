@@ -14,7 +14,7 @@ class Homepage extends React.Component {
             </Accordion.Toggle>
             <Accordion.Collapse eventKey="0">
               <Card.Body id="accordionBody">
-                The solution to your customized fitness! No more coockie cutter exercise routines, no more skipping exercises because they aren't right for you!
+                The solution to your customized fitness! No more cookie cutter exercise routines, no more skipping exercises because they aren't right for you!
              </Card.Body>
             </Accordion.Collapse>
           </Card>
@@ -36,7 +36,7 @@ class Homepage extends React.Component {
             </Accordion.Toggle>
             <Accordion.Collapse eventKey="2">
               <Card.Body id="accordionBody">
-                One of the biggest road blocks to increasing your physical activite level is doing too much too fast. This app will give you control over that pace making it easier to stick to and achieve your exercise goals.
+                One of the biggest road blocks to increasing your physical activity level is doing too much too fast. This app will give you control over that pace making it easier to stick to and achieve your exercise goals.
               </Card.Body>
             </Accordion.Collapse>
           </Card>
